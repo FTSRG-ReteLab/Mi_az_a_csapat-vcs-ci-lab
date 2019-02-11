@@ -8,12 +8,12 @@ public class TrainTachographTest {
     private TrainTachograph tachograph;
 
     @Before
-    private void before() {
+    public void before() {
         tachograph = new TrainTachograph();
     }
 
     @Test
-    private void hasValuesTest() {
+    public void hasValuesTest() {
         Assert.assertFalse(tachograph.values.isEmpty());
     }
 }
